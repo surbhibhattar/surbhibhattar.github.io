@@ -1,236 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Surbhi Bhattar's Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
 
-    <!-- Update these with your own fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surbhi Bhattar's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Update these with your own fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header class="header" id="myHeader">
-      <div class="logo">
-        <a href="#home">
-          <img src="img/surbhi-logo-02.png" alt="" />
-        </a>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header" id="myHeader">
+    <div class="logo">
+      <a href="#home">
+        <img src="img/surbhi-logo-02.png" alt="" />
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">My Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About me</a>
+        </li>
+        <li class="nav__item">
+          <a href="#work" class="nav__link">My Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am
+      <strong>Surbhi Bhattar</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+    <img src="img/surbhi-01.jpg" alt="a picture of Surbhi Bhattar smiling" class="intro__img" />
+  </section>
+
+  <!-- My services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>
+          I take user designs to build fully functional web apps. I have built
+          apps using HTML, CSS, JS and used frameworks like React.js. To make
+          a fully functional app with backend and frontend I prefer using
+          <a class="service__link" target="_blank" href="https://www.educative.io/edpresso/what-is-mern-stack"
+            title="M(MongoDB) E(Express) R(React) N(Node)">MERN</a>
+          stack
+        </p>
       </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <!-- / service -->
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am
-        <strong>Surbhi Bhattar</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-      <img
-        src="img/surbhi-01.jpg"
-        alt="a picture of Surbhi Bhattar smiling"
-        class="intro__img"
-      />
-    </section>
+      <div class="service">
+        <h3>Mobile Development</h3>
+        <p>
+          I have built some cool, simple apps for Android platform. I am
+          familiar with both Java and Kotlin.
+        </p>
+      </div>
+      <!-- / service -->
 
-    <!-- My services -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Web Development</h3>
-          <p>
-            I take user designs to build fully functional web apps. I have built
-            apps using HTML, CSS, JS and used frameworks like React.js. To make
-            a fully functional app with backend and frontend I prefer using
-            <a
-              class="service__link"
-              target="_blank"
-              href="https://www.educative.io/edpresso/what-is-mern-stack"
-              title="M(MongoDB) E(Express) R(React) N(Node)"
-              >MERN</a
-            >
-            stack
-          </p>
-        </div>
-        <!-- / service -->
-
-        <div class="service">
-          <h3>Mobile Development</h3>
-          <p>
-            I have built some cool, simple apps for Android platform. I am
-            familiar with both Java and Kotlin.
-          </p>
-        </div>
-        <!-- / service -->
-
-        <!-- <div class="service">
+      <!-- <div class="service">
                 <h3>WordPress</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
             </div> -->
-        <!-- / service -->
-      </div>
-      <!-- / services -->
+      <!-- / service -->
+    </div>
+    <!-- / services -->
 
-      <a href="#work" class="btn">My Work</a>
-    </section>
+    <a href="#work" class="btn">My Work</a>
+  </section>
 
-    <!-- About me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Freelance Software Developer in Gurgaon, India
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">
+      Freelance Software Developer in Jodhpur, India
+    </p>
+
+    <div class="about-me__body">
+      <p>
+        I am a freelance developer. I did my MTech in Computer Science from
+        IIIT, Bangalore in 2017. I have worked in 4 IT companies with total of
+        2 years of experience. Borqs (6 months, June,2017 - December,2017),
+        IBM (1 year, Jan,2018 - Jan,2019), Outline India (3 months,
+        Dec,2019 - March,2020) and Deviate Solutions (Remote, 3 months, Oct,2020-Jan,2021)
       </p>
-
-      <div class="about-me__body">
-        <p>
-          I am a freelance developer. I did my MTech in Computer Science from
-          IIIT, Bangalore in 2017. I have worked in 3 IT companies with total of
-          1.75 years of experience. Borqs (6 months, June,2017 - December,2017),
-          IBM (1 year, Jan,2018 - Jan,2019) and Outline India (3 months,
-          Dec,2019 - March,2020)
-        </p>
-        <p>
-          I love problem solving and learning about new trends in technology. I
-          also like read and write technical blogs and short stories in my spare
-          time.
-        </p>
-      </div>
-
-      <img
-        src="img/surbhi-03.jpg"
-        alt="Jane leaning against a bus"
-        class="about-me__img"
-      />
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">My work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        A selection of my range of work
+      <p>
+        I love problem solving and learning about new trends in technology. I
+        also like read and write technical blogs and short stories in my spare
+        time.
       </p>
+    </div>
 
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <a
-          href="https://codepen.io/Surbhi_Bhattar/project/full/Zpnvdb"
-          class="portfolio__item"
-          target="_blank"
-        >
-          <img src="img/tribute_page.jpg" alt="" class="portfolio__img" />
+    <img src="img/surbhi-03.jpg" alt="Jane leaning against a bus" class="about-me__img" />
+  </section>
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My work</h2>
+    <p class="section__subtitle section__subtitle--work">
+      A selection of my range of work
+    </p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="https://codepen.io/Surbhi_Bhattar/project/full/Zpnvdb" class="portfolio__item" target="_blank">
+        <img src="img/tribute_page.jpg" alt="" class="portfolio__img" />
+      </a>
+
+      <!-- Portfolio item 02 -->
+      <a href="https://codepen.io/Surbhi_Bhattar/full/JjGOPRZ" class="portfolio__item" target="_blank">
+        <img src="img/survey_page.jpg" alt="" class="portfolio__img" />
+      </a>
+
+      <!-- Portfolio item 03 -->
+      <a href="https://codesandbox.io/s/react-calc-d6ene" class="portfolio__item" target="_blank">
+        <img src="img/react-calc.png" alt="" class="portfolio__img" />
+      </a>
+
+      <!-- Portfolio item 04 -->
+      <a href="https://github.com/surbhibhattar/HackerNewsClone" class="portfolio__item" target="_blank">
+        <img src="img/hackernews_clone.png" alt="" class="portfolio__img" />
+      </a>
+
+      <!-- Portfolio item 05 -->
+      <a href="https://codesandbox.io/s/guess-movie-erpn1" class="portfolio__item" target="_blank">
+        <img src="img/guess_movie.png" alt="" class="portfolio__img" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="mailto:surbhibhattar92@gmail.com" class="footer__link">surbhibhattar92@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://twitter.com/bhattar_surbhi" target="_blank">
+          <i class="fab fa-twitter"></i>
         </a>
-
-        <!-- Portfolio item 02 -->
-        <a
-          href="https://codepen.io/Surbhi_Bhattar/full/JjGOPRZ"
-          class="portfolio__item"
-          target="_blank"
-        >
-          <img src="img/survey_page.jpg" alt="" class="portfolio__img" />
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/surbhibhattar" target="_blank">
+          <i class="fab fa-github"></i>
         </a>
-
-        <!-- Portfolio item 03 -->
-        <a
-          href="https://codesandbox.io/s/react-calc-d6ene"
-          class="portfolio__item"
-          target="_blank"
-        >
-          <img src="img/react-calc.png" alt="" class="portfolio__img" />
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://medium.com/@surbhibhattar92" target="_blank">
+          <i class="fab fa-medium"></i>
         </a>
+      </li>
+    </ul>
+  </footer>
 
-        <!-- Portfolio item 04 -->
-        <a
-          href="https://github.com/surbhibhattar/HackerNewsClone"
-          class="portfolio__item"
-          target="_blank"
-        >
-          <img src="img/hackernews_clone.png" alt="" class="portfolio__img" />
-        </a>
+  <script src="js/index.js"></script>
+</body>
 
-        <!-- Portfolio item 05 -->
-        <a
-          href="https://codesandbox.io/s/guess-movie-erpn1"
-          class="portfolio__item"
-          target="_blank"
-        >
-          <img src="img/guess_movie.png" alt="" class="portfolio__img" />
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- replace with your own email address -->
-      <a href="mailto:surbhibhattar92@gmail.com" class="footer__link"
-        >surbhibhattar92@gmail.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://twitter.com/bhattar_surbhi"
-            target="_blank"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://github.com/surbhibhattar"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://medium.com/@surbhibhattar92"
-            target="_blank"
-          >
-            <i class="fab fa-medium"></i>
-          </a>
-        </li>
-      </ul>
-    </footer>
-
-    <script src="js/index.js"></script>
-  </body>
 </html>
