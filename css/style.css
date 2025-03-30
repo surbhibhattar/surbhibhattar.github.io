@@ -366,13 +366,13 @@ header {
 
 @media (min-width: 600px) {
   .about-me {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 200px; */
+    /* grid-template-areas: */
+      /* "title"
+      "subtitle"
+      "text"; */
+    /* grid-column-gap: 2em; */
   }
 
   .section__title--about {
